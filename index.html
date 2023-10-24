@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header class="head_bar">
+            <h1 class="head_bar__title">Bookshelf Apps DICODING</h1>
+        </header>
+        <!-- Main Content (Box) -->
+        <main class="main-content">
+            <!-- Section box 1 -->
+            <div class="section-contain-1">
+                <section class="input_section">
+                    <h2>Masukkan Buku Baru</h2>
+                    <form id="masukanBuku">
+                        <div class="input">
+                            <label for="judulBuku">Judul</label>
+                            <input id="judulBuku" type="text" placeholder="Masukan Judul Buku" required />
+                        </div>
+                        <div class="input">
+                            <label for="pemilikbuku">Penulis</label>
+                            <input id="pemilikbuku" type="text" placeholder="Masukan Nama Penulis" required />
+                        </div>
+                        <div class="input">
+                            <label for="tahunbuku">Tahun</label>
+                            <input id="tahunbuku" type="number" placeholder="Masukan Tahun" required />
+                        </div>
+                        <div class="input_inline">
+                            <label for="selesaibacabuku">Selesai dibaca</label>
+                            <input id="selesaibacabuku" type="checkbox" />
+                        </div>
+                        <button id="bukuSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+                    </form>
+                </section>
+                <section class="search_section">
+                    <h2>Cari Buku (Opsional)</h2>
+                    <form id="cariBuku">
+                        <label for="searchBookTitle">Judul</label>
+                        <input id="searchBookTitle" type="text" placeholder="Cari Buku..." />
+                        <button id="searchSubmit" type="submit">Cari</button>
+                    </form>
+                </section>
+            </div>
+            <!-- Section box 2 -->
+            <div class="section-contain-2">
+                <section class="book_shelf">
+                    <h2>Belum selesai dibaca</h2>
+                    <div id="belomSelesai" class="book_list"></div>
+                </section>
+            </div>
+            <div class="section-contain-2">
+                <section class="book_shelf">
+                    <h2>Selesai dibaca</h2>
+                    <div id="selesaiBuku" class="book_list"></div>
+                </section>
+            </div>
+        </main>
+        <script src="./js/main.js"></script>
+    </body>
+    <!-- footer -->
+    <footer class="footer">
+        <p>Copyright &copy; Wahyu Surya All right reserved</p>
+    </footer>
+</html>
